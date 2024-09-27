@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proyects",
+  "info": {
+    "singularName": "proyect",
+    "pluralName": "proyects",
+    "displayName": "Proyect",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "tecnologies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tecnology.tecnology",
+      "mappedBy": "proyect"
+    }
+  }
+}

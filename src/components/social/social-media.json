@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_social_social_medias",
+  "info": {
+    "displayName": "social_media",
+    "icon": "rocket",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "x": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  }
+}
